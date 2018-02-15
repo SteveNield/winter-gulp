@@ -48,5 +48,9 @@
     "supertest": "^1.2.0",
     "webpack": "^2.7.0",
     "webpack-stream": "^3.2.0"
+  },
+  "devDependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
   }
 }

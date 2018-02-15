@@ -44,11 +44,6 @@ function build (watch, isProduction, callback) {
         })
     ];
 
-    var apps = [{
-      entry: 'client/js/App.jsx',
-      output: 'app.min.js'
-    }];
-
     if (isProduction) {
       plugins.push(new webpack.optimize.UglifyJsPlugin());
     }
@@ -57,12 +52,12 @@ function build (watch, isProduction, callback) {
 
     function finalise(){
       bundleCount ++;
-      if(bundleCount === apps.length){
+      if(bundleCount === paths.js.apps.length){
         callback();
       }
     }
 
-    apps.map(function(app){
+    paths.js.apps.map(function(app){
       webpack({
         plugins: plugins,
         cache: true,
