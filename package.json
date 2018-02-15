@@ -1,0 +1,40 @@
+{
+  "name": "winter-gulp",
+  "version": "1.0.4",
+  "description": "Pre-configured gulp tasks for js and css watch/build, version bumping and testing using Mocha.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stevenield/winter-gulp.git"
+  },
+  "author": "Steve Nield - Winter Softworks Limited - steve@wintersoftworks.co.uk - https://stevenield.github.io",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stevenield/winter-gulp/issues"
+  },
+  "homepage": "https://github.com/stevenield/winter-gulp#readme",
+  "dependencies": {
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "gulp": "^3.9.1",
+    "gulp-bump": "^3.1.0",
+    "gulp-clean-css": "^3.9.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-mocha": "^5.0.0",
+    "gulp-sass": "^3.1.0",
+    "path": "^0.12.7",
+    "webpack": "^3.11.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.0.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  }
+}
